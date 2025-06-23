@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Launch</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(243, 245, 247);
+        }
+
+        .container {
+            max-width: 800px;
+            text-align: center;
+            padding: 20px;
+            margin: auto;
+        }
+
+        header {
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: #333;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #666;
+        }
+
+        .product-section {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .product-image {
+            margin-bottom: 20px;
+        }
+
+        .product-info h2 {
+            font-size: 2rem;
+            color: #333;
+            margin: 4px;
+        }
+
+        .product-info p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            background-color: rgb(98, 91, 234);
+            color: white;
+            border: none;
+        }
+
+        button:hover {
+            background-color: rgb(49, 39, 228);
+            color: black;
+        }
+
+        footer {
+            margin-top: 50px;
+        }
+
+        footer p {
+            color: #666;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #notify-form {
+            margin-top: 20px;
+        }
+
+        #notify-form input {
+            padding: 10px;
+            width: 70%;
+            margin-right: 10px;
+        }
+
+        #notify-form button {
+            padding: 10px 20px;
+        }
+
+        /* 
+.product-image {
+    width: 300px;
+}*/
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Exciting New Product Coming Soon!</h1>
+            <p>Sign up to get notified when we launch</p>
+        </header>
+        <div class="product-section">
+            <img src="https://m.media-amazon.com/images/I/716x6xmGuZL.jpg" alt="Product Image" class="product-image">
+            <div class="product-info">
+                <h2>Amazing New Product</h2>
+                <p>This product will revolutionize the way you work and play. Be the first to get your hands on it.</p>
+                <button id="notify-btn">Notify Me</button>
+            </div>
+        </div>
+        <div id="notify-form" class="hidden">
+            <form>
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <button type="submit" id="submit-btn">Notify Me</button>
+            </form>
+        </div>
+        <footer>
+            <p>© 2024 Product Launch. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
